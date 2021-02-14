@@ -1,3 +1,16 @@
 body {
   font-family: "Open Sans Condensed";
+  font-size: 20px;
+  padding: 20px 80px;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
 }

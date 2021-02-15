@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import { auth } from "../firebase/firebase.utils";
+import { auth } from "../../firebase/firebase.utils";
 import { createStructuredSelector } from "reselect";
 
 import { selectToggleDropdown } from "../../redux/cart/cart.selectors";

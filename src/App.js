@@ -7,10 +7,7 @@ import "./App.css";
 
 import { selectCurrentUser } from "./redux/user/user.selectors";
 
-import {
-  auth,
-  createUserProfileDocument,
-} from "./components/firebase/firebase.utils";
+import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 
 //REDUCER ACTIONS
 import { setCurrentUser } from "./redux/user/user.actions";
@@ -70,7 +67,7 @@ class App extends React.Component {
 }
 
 const mapStateToProps = createStructuredSelector({
-  currentUser: selectCurrentUser,
+  currentUser: setCurrentUser,
 });
 
 //Invoke actions in order to 'set the state' by runnning through all reducers, where the appropriate action is activated by the action.type. Makes this.state and this.setState redundant.
